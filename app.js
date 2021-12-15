@@ -48,6 +48,10 @@ const showPerson = (person) => {
   info.textContent = item.text;
 };
 
+window.addEventListener("DOMContentLoaded", function () {
+  showPerson(currentItem);
+});
+
 prevBtn.addEventListener("click", function () {
   currentItem--;
   if (currentItem < 0) {
